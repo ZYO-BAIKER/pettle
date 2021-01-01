@@ -4,55 +4,20 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
   display: flex;
-  flex-direction: column;
-  background-color: rgb(211, 236, 219);
-}
-
-.search-bar-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: rgba(0,0,0,0.9) !important;
+  padding: 20px 10px;
 }
 
 .pettle-icon {
   width: 10vw;
-  margin-right: 10vw;
-}
-
-.search-form {
-  width: 65vw;
-  height: 5vh;
-  display: flex;
-  margin-bottom: 5px;
-}
-
-.search-form>.input-box {
-  width: 100%;
-  height: 5vh;
-  padding-left: 10px;
-}
-
-.search-button {
-  width: 5vh;
-  border: 0;
-  cursor: pointer;
-  background-color: #3ccace;
-  padding: 8px;
-}
-
-.search-icon {
-  width: 100%;
 }
 
 .nav {
-  font-size: 16px;
-  display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1vh 0;
+  padding: 2vh 0;
+  font-size: 17px;
 }
 
 .lists-right {
@@ -64,13 +29,8 @@
   display: flex;
 }
 
-.login {
+.list-item {
   text-decoration: none;
-  margin-right: 2vw;
-  color: #352929;
-}
-
-.sign-up {
-  text-decoration: none;
-  color: #333333;
+  color:  rgba(255,255,255,0.5);
+  margin: 0 2vw;
 }
