@@ -1,0 +1,26 @@
+<header class='top-page-header'>
+  <div class='search-bar-contents'>
+    <%= link_to image_tag("pettle-logo.png", class:"pettle-icon"), '/' %>
+      <%= form_with(url: "/", local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :keyword, placeholder: 'キーワードから探す', class: 'input-box' %>
+        <button class="search-button">
+           <%= image_tag "search.png", class:"search-icon" %>
+        </button>
+      <% end %>
+  </div>
+  <div class='nav'>
+    <ul class='lists-right'>
+      <%# if user_signed_in? %>
+       <div class="user_nav grid-6">
+        <li><%#= link_to 'ログアウト', "/", method: :delete, class: "logout"%> </li>
+        <li><%#= link_to "フリマ退会", "/", method: :delete, data: { confirm: "アカウント消しちゃうの？" }, class: "delete" %></li>
+       </div>
+      <%# else %>
+       <div class = "gird-6">
+        <li><%= link_to 'ログイン', "/", class: "login" %></li>
+        <li><%= link_to '新規登録', "/", class: "sign-up" %></li>
+       </div>
+      <%# end %>
+    </ul>
+  </div>
+</header>
