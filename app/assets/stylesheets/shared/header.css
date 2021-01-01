@@ -10,23 +10,19 @@
 }
 
 .pettle-icon {
-  width: 10vw;
+  width: 11vw;
 }
 
 .nav {
   flex-wrap: wrap;
   width: 100%;
   padding: 2vh 0;
-  font-size: 17px;
 }
 
 .lists-right {
   display: flex;
   list-style: none;
-}
-
-.gird-6 {
-  display: flex;
+  font-size: 19px;
 }
 
 .list-item {
