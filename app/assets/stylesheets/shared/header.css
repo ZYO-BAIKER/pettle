@@ -5,12 +5,32 @@
 .top-page-header {
   width: 100vw;
   display: flex;
-  background: rgba(0,0,0,0.9) !important;
+  background: #00000038;
   padding: 20px 10px;
+  background-color: rgb(255 248 218 / 79%);
+}
+
+.flower {
+  position: absolute;
+  top: 0;
+}
+
+.flower.flowerL {
+  left: 0;
+}
+
+.flower.flowerR {
+  transform: scale(-1, 1);
+  right: 0;
+}
+
+.header-image {
+  margin-left: 240px;
 }
 
 .pettle-icon {
-  width: 11vw;
+  width: 12vw;
+  
 }
 
 .nav {
@@ -22,11 +42,11 @@
 .lists-right {
   display: flex;
   list-style: none;
-  font-size: 19px;
+  font-size: 23px;
 }
 
 .list-item {
   text-decoration: none;
-  color:  rgba(255,255,255,0.5);
+  color:  rgba(43, 31, 31, 0.5);
   margin: 0 2vw;
 }
