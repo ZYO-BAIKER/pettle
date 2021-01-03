@@ -1,3 +1,13 @@
+.login-main {
+  width: 100%;
+  min-width: 800px;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../bg.gif");
+}
+
 .login-btn {
   width: 50%;
   margin: 0 auto;
