@@ -10,7 +10,7 @@
 
 .form-wrap {
   width: 50%;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 
 .form-group {
@@ -49,18 +49,22 @@
 
 .info-text {
   color: #888;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 3px;
 }
 
-.form-info-text {
-  font-size: 15px;
+.form-select {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.input-name-wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.select-box {
+  height: 30px;
+  width: 50%;
+  background-color: #f5f5f5;
+  margin: 0 6px;
 }
 
 .register-btn {
