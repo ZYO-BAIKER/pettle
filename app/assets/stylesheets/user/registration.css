@@ -64,7 +64,11 @@
   height: 30px;
   width: 50%;
   background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #dadccd00;
   margin: 0 6px;
+  color: #888888e0;
 }
 
 .register-btn {
