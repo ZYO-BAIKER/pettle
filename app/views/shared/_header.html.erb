@@ -6,18 +6,19 @@
 </div>
 <header class='top-page-header'>
   <div class="header-image">
-    <%= link_to image_tag("pettle-logo.png", class:"pettle-icon"), '/' %>
+    <%= link_to image_tag("xoxo.png", class:"pettle-icon"), '/' %>
   </div>
   <div class='nav'>
     <ul class='lists-right'>
-        <li><%= link_to 'Pettleとは', "/", class: "list-item" %></li>
-      <%# if user_signed_in? %>
-        <li><%#= link_to 'ログアウト', "/", method: :delete, class: "logout"%> </li>
-        <li><%#= link_to "フリマ退会", "/", method: :delete, data: { confirm: "アカウント消しちゃうの？" }, class: "delete" %></li>
-      <%# else %>
-        <li><%= link_to '新規登録', "/", class: "list-item" %></li>
-        <li><%= link_to 'ログイン', "/", class: "list-item" %></li>
-      <%# end %>
+        <li><%= link_to 'PETTLEとは', "/", class: "list-item" %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to current_user.nickname, user_path(current_user.id), class: "list-item" %> </li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "list-item" %></li>
+        <li><%= link_to "退会", user_registration_path, method: :delete, data: { confirm: "アカウント消すの？" }, class: "list-item" %></li>
+      <% else %>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "list-item" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "list-item" %></li>
+      <% end %>
     </ul>
   </div>
 </header>
