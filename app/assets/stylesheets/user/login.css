@@ -8,6 +8,11 @@
   background-image: url("../bg.gif");
 }
 
+.login-wrap {
+  width: 50%;
+  padding-bottom: 200px;
+}
+
 .login-btn {
   width: 50%;
   margin: 0 auto;
